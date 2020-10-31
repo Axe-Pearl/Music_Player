@@ -1,0 +1,435 @@
+body,html{height: 100%;padding: 0;margin: 0;}
+.webname{
+  text-align:center;
+  font-size:80px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+@media screen and (max-width:1500px){
+  .webname{
+    font-size:30px;
+    left:250px;
+    margin-left: 30px;
+    position: absolute;
+  }
+}
+@media screen and (max-width:1500px) {
+  .nplay{
+    top:300px;
+    font-size:20px;
+    position: absolute;
+  }
+}
+.symb1{
+  color:yellow;
+  font-weight:bold;
+  font-size:40px;
+}
+@media screen and (max-width:1500px){
+  .symb1{
+    top:293px;
+    padding-left: 110px;
+    font-size:30px;
+    position: absolute;
+  }
+}
+@media screen and (max-width:1500px){
+  .artist{
+    top:340px;
+    font-size:20px;
+    position: absolute;
+  }
+}
+.song-name,.artist-name{
+  color:red;
+}
+@media screen and (max-width:1500px){
+  .song-name{
+    top:325px;
+    color:blue;
+    font-size:15px;
+    position: absolute;
+  }
+}
+@media screen and (max-width:1500px){
+  .artist-name{
+    top:365px;
+    color:blue;
+    font-size:15px;
+    position: absolute;
+  }
+}
+
+/*designing playlist*/
+ .playlist{
+    top:20px;
+    left:0px;
+    width: 450px;
+    height:750px;
+    border-style:none;
+    border-radius: 0.5px;
+    position: absolute;
+    display: inline-block;
+  }
+  .playlist:hover{
+    border-style:hidden;
+  }
+  @media screen and (max-width:1500px) {
+  .playlist {
+    width:200px; /* The width is 100%, when the viewport is 800px or smaller */
+    display:block;
+  }
+}
+  .playlist_topic{ /* for title of playlist*/
+    padding-left:35px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    width: 420px;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    font-family:verdana;
+    font-size: 30px;
+  }
+  .playlist_topic:hover{
+    font-size: 35px;
+  }
+  @media screen and (max-width:1500px){
+    .playlist_topic,.playlist_topic:hover{
+      padding-left:10px;
+      left:10px;
+      font-size: 20px;
+    }
+  }
+  /*designing song names in PlayList*/
+  .csong{
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    display: inline;
+    position: absolute;
+  }
+  .csong:hover{
+    font-size: 25px;
+  }
+  @media screen and (max-width:1500px) {
+  .csong,.csong:hover {
+    font-size: 10px;
+  }
+}
+  .deco{
+    color: #00FA9A;
+  }
+  .deco:hover{
+    color:#CD5C5C;
+  }
+  /*song image cover*/
+  .track-art {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width:1000px) {
+  .track-art{
+    top:160px;
+    left:250px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+  }
+}
+  /*mute or unmute*/
+  .sounder{
+    right:400px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+  @media screen and (max-width:1000px) {
+    .sounder{
+      bottom: 100px;
+      left:240px;
+      position: absolute;
+    }
+  }
+
+  /*music player button control*/
+.buttons {
+  top:350px;
+  margin-left: 610px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width:1000px) {
+  .buttons{
+    height:50px;
+    width:100px;
+    margin-left:180px;
+    top:400px;
+    position: absolute;
+  }
+}
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+  .buttons{
+    margin-left:180px;
+    top:420px;
+    position: absolute;
+  }
+}
+.rotate-img{
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.vol{
+  border-style: solid;
+  border-radius:5px;
+  background-color:green;
+  width:40px;
+  height:5px;
+  bottom: 170px;
+  right:398px;
+  position: absolute;
+}
+@media screen and (max-width:1000px) {
+  .vol{
+    bottom: 150px;
+    height: 3px;
+    left:400px;
+    position: absolute;
+  }
+}
+.vol1{
+}
+.vol2{
+  width:60px;
+  bottom:190px;
+  right:388px;
+}
+@media screen and (max-width:1000px) {
+  .vol2{
+    bottom:160px;
+    height: 3px;
+    left:388px;
+  }
+}
+.vol3{
+  width:80px;
+  bottom:210px;
+  right:378px;
+}
+@media screen and (max-width:1000px) {
+  .vol3{
+    height: 3px;
+    bottom:172px;
+    left:378px;
+  }
+}
+.vol4{
+  width:100px;
+  bottom:230px;
+  right:368px;
+}
+@media screen and (max-width:1000px) {
+  .vol4{
+    height: 3px;
+    bottom:185px;
+    left:368px;
+  }
+}
+.vset{
+  bottom: 125px;
+  right:400px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+@media screen and (max-width:1000px) {
+  .vset{
+    visibility: hidden;
+  }
+}
+.shortcuts{
+  font-family:verdana;
+  font-size: 30px;
+  color:#708090;
+  text-decoration: none;
+  top:150px;
+  right:95px;
+  display: inline;
+  position: absolute;
+}
+
+.shortcuts:hover{
+  text-decoration:underline;
+  opacity: 0.8;
+}
+.extras{
+  top:20px;
+  right:0px;
+  width: 300px;
+  height:750px;
+  border-style: groove;
+  border-color:black;
+  border-radius: 0.5px;
+  background-color: black;
+  position: absolute;
+  display: inline-block;
+}
+.extras:hover{
+  border-style:hidden;
+  border-color:black;
+}
+@media screen and (max-width:1000px) {
+.extras,.extras:hover {
+  visibility: hidden;
+  width:100px; /* The width is 100%, when the viewport is 800px or smaller */
+  bottom: 30px;
+}
+/* The switch - the box around the slider */
+/*.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}*/
+
+/*Hide default HTML checkbox */
+/*.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}*/
+.current-time{
+  padding: 10px;
+  bottom: 45px;
+  position: absolute;
+  left:540px;
+}
+.total-duration {
+  padding: 10px;
+  bottom:45px;
+  position: absolute;
+  right:565px;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider{
+  width: 300px;
+  bottom: 60px;
+  right:620px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  position: absolute;
+}
+
+/* Modify the appearance of the slider thumb */
+/*.seek_slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}*/
+
+/*Change the opacity when mouse is hovered
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}*/
+
+/* The slider */
+/*.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}*/
+
+/* Rounded sliders */
+/*.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}*/

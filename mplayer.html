@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Calypso</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="mplayer.css">
+<script type="text/javascript" src="mplayer.js"></script>
+
+<body style="background: rgb(2,0,36);
+background: background: rgb(8,0,0);
+background: linear-gradient(90deg, rgba(8,0,0,1) 0%, rgba(39,41,51,1) 11%, rgba(148,187,233,1) 100%);">
+  <!--Webname-->
+  <h1 class="webname">CalypsO</h1>
+
+  <!--Creating Song PlayList-->
+  <div class="playlist">
+    <div class="playlist_topic">Calypso PlayList</div>
+    <div class="csong">>> <span class="deco" id="0" onclick="choice_play(this.id)">Pirates_of_the_Caribbean_bgm</span></div><br><br>
+    <div class="csong">>> <span class="deco" id="1" onclick="choice_play(this.id)"> Harry_Potter</span></div><br><br>
+    <div class="csong">>> <span class="deco" id="2" onclick="choice_play(this.id)">Faded</span></div><br><br>
+    <div class="csong">>> <span class="deco" id="3" onclick="choice_play(this.id)">Love me like you do</span></div><br><br>
+    <div class="csong">>> <span class="deco" id="4" onclick="choice_play(this.id)">I Love You Baby(ily)</span></div><br><br>
+  </div>
+
+  <!--current music details-->
+  <div class="info-section">
+    <img src="im_lib/unmute.png" alt="This is button for mute/unmute" class="sounder" id="sounding" onclick="sound()">
+    <img src="im_lib/default_cover.jpg" alt="Sorry Image not supported in your browser" class="track-art" id="cover">
+    <div class="" style="text-align:center;font-size:30px;font-family:cursive;" margin-top:30px;>
+      <span class="nplay">Now Playing</span><span  class="symb1"> >> </span><br><span class="song-name" id="song"></span><br>
+        <span class="artist" style="">Artist:</span><span class="artist-name" id="artist"></span><br>
+      <div class="sound"></div>
+    </div>
+    <!--Music Control System-->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x" id="play"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class=" fa fa-step-forward fa-2x"></i>
+      </div>
+      <!--<label class="switch">
+  <input type="checkbox" class="autoplayer" onchange="autoplay()">
+  <span class="slider round"></span>
+      <div class="current-time">00:00</div>
+      <input class="seek_slider" type="range" min="0" max="100"
+        value="0" onchange="seekTo(this.value)">
+      <div class="total-duration">00:00</div>
+    </div>
+  </div>-->
+  <div class="volume">
+    <div class="vol vol4" style="visibility:hidden;"></div>
+    <div class="vol vol3" style="visibility:hidden;"></div>
+    <div class="vol vol2" style="visibility:hidden;"></div>
+    <div class="vol vol1" style="visibility:hidden;"></div>
+  </div>
+  <div class="volume-settings">
+    <img src="im_lib/volumecd.png" alt="volume-control" class="vset" id="vsetor" onclick="opener()">
+  </div>
+  <!-- <div class="slider-section">
+     <div class="current_time">00:00</div>
+     <input type="range" id="seek_slider" min="0" max="100" value="0">
+     <div class="total_duration">00:00</div>
+   </div>-->
+  <!--extra section-->
+  <div class="extras">
+    <a href="shortcut.html" class="shortcuts"><strong>Shortcuts</strong></a>
+    <p style="top:40px;margin-left:10px;position:absolute;font-size:25px;font-family:sans-serif;color:white;">Enjoy Music Online and learn keyword shortcuts</p>
+    <p style="top:200px;margin-left:10px;position:absolute;font-size:25px;font-family:sans-serif;color:white;">What Coming Next...We are trying to improve your music experience</p>
+    <a href="whatnext.html" class="shortcuts" style="top:350px;margin-left:80px;right:65px;"><strong>What_Next</strong></a>
+  </div>
+</body>
+
+</html>
